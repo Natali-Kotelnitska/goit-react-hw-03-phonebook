@@ -30,6 +30,7 @@ export class App extends Component {
       localStorage.setItem('contacts', JSON.stringify(contacts));
     }
   }
+
   formSubmitHandler = data => {
     const normalizedName = this.normalizedContact(data);
     if (
@@ -91,7 +92,6 @@ export class App extends Component {
           fontSize: 20,
           fontWeight: 700,
           color: '#010101',
-          // paddingTop: '20px',
           padding: '20px 45px',
         }}
       >
